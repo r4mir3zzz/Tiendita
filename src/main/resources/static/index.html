@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>TechShop</title>
         <meta charset="UTF-8">
-        
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header>
             <a href ="index.html"> <h1>Techshop</h1> </a>
             <nav>
                 <a href ="ejemplo8.html"> &triangleleft; </a>
-                <a href ="ejemplo3.html"> &triangleright; </a>
+                <a href ="ejemplo2.html"> &triangleright; </a>
                 <a href ="#"> Nosotros </a>
                 <a href ="#"> Tienda </a>
                 <a href ="#"> Reportes </a>
             </nav>
         </header>
         <aside>
-            <h2> Ultimas Noticias </h2>
+            <h2 class="resaltado"> Ultimas Noticias </h2>
             <p>Segun los reportes de ventas que van del mes el XR-128 es el producto mas vendido, no se quede sin esta novedad</p>
         </aside>
         <section>
@@ -38,7 +37,7 @@
                     <img src="https://www.dbtechnologies.com/images/299/5876/850x500/nocrop/noenlarge/q-100/DT-VIOL210L-1.png" height="150" alt="Imagen de una tarjeta de video"> 
                     <figcaption> $254.000.00 <a href="#">Add</a>  </figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, egestas euismod magnis quis lobortis semper erat scelerisque, sociis aenean at aliquam risus fringilla. Eget vitae phasellus condimentum dis natoque integer hac aenean eleifend, at in quam dapibus magnis ullamcorper rutrum hendrerit, ligula orci maecenas a per faucibus mus viverra. Inceptos interdum magna sodales iaculis rutrum ante pellentesque ligula bibendum gravida convallis nisl commodo, litora tristique tincidunt pulvinar ullamcorper tellus maecenas a mauris porta per mattis. In ornare volutpat velit gravida augue inceptos natoque metus, porttitor eros semper laoreet scelerisque consequat donec, felis nisi senectus fames dui auctor facilisis.</p>
+                <p>Lorem ipsum dolor sit amet <span class="resaltado">consectetur adipiscing elit, </span>egestas euismod magnis quis lobortis semper erat scelerisque, sociis aenean at aliquam risus fringilla. Eget vitae phasellus condimentum dis natoque integer hac aenean eleifend, at in quam dapibus magnis ullamcorper rutrum hendrerit, ligula orci maecenas a per faucibus mus viverra. Inceptos interdum magna sodales iaculis rutrum ante pellentesque ligula bibendum gravida convallis nisl commodo, litora tristique tincidunt pulvinar ullamcorper tellus maecenas a mauris porta per mattis. In ornare volutpat velit gravida augue inceptos natoque metus, porttitor eros semper laoreet scelerisque consequat donec, felis nisi senectus fames dui auctor facilisis.</p>
                 <hr>
             </article>
             <article>
@@ -50,6 +49,60 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, egestas euismod magnis quis lobortis semper erat scelerisque, sociis aenean at aliquam risus fringilla. Eget vitae phasellus condimentum dis natoque integer hac aenean eleifend, at in quam dapibus magnis ullamcorper rutrum hendrerit, ligula orci maecenas a per faucibus mus viverra. Inceptos interdum magna sodales iaculis rutrum ante pellentesque ligula bibendum gravida convallis nisl commodo, litora tristique tincidunt pulvinar ullamcorper tellus maecenas a mauris porta per mattis. In ornare volutpat velit gravida augue inceptos natoque metus, porttitor eros semper laoreet scelerisque consequat donec, felis nisi senectus fames dui auctor facilisis.</p>
                 <hr>
             </article>
+            
+            <article>
+                <h2>Listado de productos</h2>
+                <table border="0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Codigo</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>XT-128</td>
+                            <td style="text-align: end">$254.000.00 </td>
+                            <td style="text-align: center">4</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>DT-582</td>
+                            <td style="text-align: end">$254.000.00</td>
+                            <td style="text-align: center">2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>VIVO-X</td>
+                            <td style="text-align: end">$254.000.00</td>
+                            <td style="text-align: center">3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>XT-128</td>
+                            <td style="text-align: end">$254.000.00 </td>
+                            <td style="text-align: center">4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>DT-582</td>
+                            <td style="text-align: end">$254.000.00</td>
+                            <td style="text-align: center">2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>VIVO-X</td>
+                            <td style="text-align: end">$254.000.00</td>
+                            <td style="text-align: center">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+            </article>
+            
         </section>
         <footer>
             Derechos Reservados 2023 &COPY;

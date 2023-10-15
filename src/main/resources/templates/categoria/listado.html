@@ -9,9 +9,12 @@
     </head>
     <body>
         <header th:replace="~{layout/plantilla :: header}"/>
-        <h2>Estoy en listado</h2>
-        <h3>La lista tiene [[${totalCategorias}]]</h3>
-        <h4>La lista es [[${categorias}]]</h4>
+        
+        <section th:replace="~{categoria/fragmentos :: botonesAgregar}"/>
+        <section th:replace="~{categoria/fragmentos :: agregarCategoria}"/>
+        <section th:replace="~{categoria/fragmentos :: listadoCategorias}"/>
+
         <footer th:replace="~{layout/plantilla :: footer}"/>
     </body>
+    
 </html>

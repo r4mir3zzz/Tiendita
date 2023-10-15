@@ -7,8 +7,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
+
 @Controller
-@ RequestMapping("/categorias")
+@RequestMapping("/categoria")
 public class CategoriaController {
     
     @Autowired
@@ -16,11 +18,14 @@ public class CategoriaController {
     
     @GetMapping("/listado")
     public String listado(Model model){
+       
         var categorias = categoriaService.getCategorias(false);
-        
         model.addAttribute("categorias", categorias);
         model.addAttribute("totalCategorias",categorias.size());
         
         return "/categoria/listado";
     }
+    
+ 
+   
 }

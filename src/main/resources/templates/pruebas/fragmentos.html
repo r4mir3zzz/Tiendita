@@ -19,5 +19,32 @@
                 </li>
             </ul>
         </section>
+        
+        <section th:fragment="listadoProductos" id="productos">
+            <div class="row row-cols-4">
+                <div class="card" th:each="p : ${productos}">
+                    <figure>
+                        <img th:src="${p.rutaImagen}" 
+                             class="card-img-top" alt="..."
+                             height="200"
+                             width="300">
+                            <figcaption>
+                                [[${p.precio}+'('+${p.existencias}+')']]
+                            </figcaption>
+                    </figure>
+
+                    <div class="card-header">
+                        <h4 class="card-title">[[${p.descripcion}]]</h4>
+                    </div>
+                    <div class="card-body">
+                        <p
+                            class="card-text">
+                            [[${p.detalle}]]
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </body>
 </html>

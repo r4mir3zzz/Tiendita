@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/producto")
+@RequestMapping("/pruebas")
 public class PruebasController {
     
     @Autowired
